@@ -124,21 +124,8 @@ jobs:
             echo "CARGO_NET_GIT_FETCH_WITH_CLI=true"
           ) > .env_file
 
-      - name: Build and publish wheels
-        if: needs.init.outputs.build_wheels == 'true' && needs.init.outputs.publish == 'true'
-        uses: home-assistant/wheels@e5742a69d69f0e274e2689c998900c7d19652c21 # 2025.12.0
-        with:
-          wheels-key: ${{ secrets.WHEELS_KEY }}
-          abi: ${{ env.WHEELS_ABI }}
-          tag: ${{ env.WHEELS_TAG }}
-          arch: ${{ matrix.arch }}
-          apk: ${{ env.WHEELS_APK_DEPS }}
-          skip-binary: ${{ env.WHEELS_SKIP_BINARY }}
-          env-file: true
-          requirements: "requirements.txt"
-
       - name: Build local wheels
-        if: needs.init.outputs.build_wheels == 'true' && needs.init.outputs.publish == 'false'
+        if: needs.init.outputs.build_wheels == 'true'
         uses: home-assistant/wheels@e5742a69d69f0e274e2689c998900c7d19652c21 # 2025.12.0
         with:
           wheels-host: ""
@@ -154,7 +141,7 @@ jobs:
           requirements: "requirements.txt"
 
       - name: Upload local wheels artifact
-        if: needs.init.outputs.build_wheels == 'true' && needs.init.outputs.publish == 'false'
+        if: needs.init.outputs.build_wheels == 'true'
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: wheels-${{ matrix.arch }}
