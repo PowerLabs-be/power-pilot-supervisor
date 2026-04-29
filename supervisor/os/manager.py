@@ -124,7 +124,7 @@ class OSManager(CoreSysAttributes):
                 and self.latest_version is not None
                 and self.version < self.latest_version
             )
-        except (AwesomeVersionException, TypeError):
+        except AwesomeVersionException, TypeError:
             return False
 
     @property
@@ -172,10 +172,11 @@ class OSManager(CoreSysAttributes):
             update_board = "generic-x86-64"
 
         # The OS name used to be hassos before renaming to haos...
-        if version < 6.0:
-            update_os_name = "hassos"
-        else:
-            update_os_name = "haos"
+        if self.os_name in ("hassos", "haos"):
+            if version < 6.0:
+                update_os_name = "hassos"
+            else:
+                update_os_name = "haos"
 
         url = raw_url.format(
             version=str(version), board=update_board, os_name=update_os_name
@@ -238,8 +239,9 @@ class OSManager(CoreSysAttributes):
 
             cpe = CPE(self.sys_host.info.cpe)
             os_name = cpe.get_product()[0]
-            if os_name not in ("hassos", "haos"):
+            if os_name not in ("hassos", "haos", "ppos"):
                 self._board = BOARD_NAME_SUPERVISED.lower()
+                self._os_name = f"{os_name} (Unsupported)"
                 raise NotImplementedError()
         except NotImplementedError:
             _LOGGER.info("No Home Assistant Operating System found")
