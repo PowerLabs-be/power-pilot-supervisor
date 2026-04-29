@@ -59,7 +59,7 @@ When updates are available, users receive notifications.
 
 **Core Components**: Supervisor, Home Assistant Core, HAOS, and built-in plugins
 receive version information from a central JSON file fetched from
-`https://version.home-assistant.io/{channel}.json`. The `Updater` class handles
+`https://raw.githubusercontent.com/PowerLabs-be/power-pilot-version/refs/heads/master/{channel}.json`. The `Updater` class handles
 fetching this data, validating signatures, and updating internal version tracking.
 
 **Update Channels**: Three channels (`stable`/`beta`/`dev`) determine which version
