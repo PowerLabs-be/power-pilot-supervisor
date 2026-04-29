@@ -297,21 +297,21 @@ class Updater(FileConfiguration, CoreSysAttributes):
 
         events = ["supervisor", "core"]
         try:
-            # Update supervisor version
+            # Update Supervisor version
             self._data[ATTR_SUPERVISOR] = AwesomeVersion(data["supervisor"])
 
-            # Update Home Assistant core version
+            # Update Power Pilot Core version
             self._data[ATTR_HOMEASSISTANT] = AwesomeVersion(
-                data["homeassistant"][machine]
+                data["power-pilot-core"][machine]
             )
 
-            # Update HassOS version
+            # Update Power Pilot OS version
             if self.sys_os.board:
                 self._data[ATTR_OTA] = data["ota"]
-                if version := data["hassos"].get(self.sys_os.board):
+                if version := data["ppos"].get(self.sys_os.board):
                     self._data[ATTR_HASSOS_UNRESTRICTED] = AwesomeVersion(version)
                     # Store the upgrade map for persistent access
-                    self._data[ATTR_HASSOS_UPGRADE] = data.get("hassos-upgrade", {})
+                    self._data[ATTR_HASSOS_UPGRADE] = data.get("ppos-upgrade", {})
                     events.append("os")
                 else:
                     _LOGGER.warning(
