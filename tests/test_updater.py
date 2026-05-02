@@ -33,7 +33,7 @@ async def test_fetch_versions(
 
     data = json.loads(await mock_update_data.text())
     assert coresys.updater.version_supervisor == data["supervisor"]
-    assert coresys.updater.version_homeassistant == data["homeassistant"]["default"]
+    assert coresys.updater.version_homeassistant == data["power-pilot-core"]["default"]
 
     assert coresys.updater.version_audio == data["audio"]
     assert coresys.updater.version_cli == data["cli"]
