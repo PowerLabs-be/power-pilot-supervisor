@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Power control for host."""
 
 from datetime import datetime

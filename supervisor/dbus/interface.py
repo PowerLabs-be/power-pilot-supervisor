@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface class for D-Bus wrappers."""
 
 from abc import ABC, abstractmethod

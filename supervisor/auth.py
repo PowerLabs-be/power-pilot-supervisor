@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Manage SSO for Add-ons with Home Assistant user."""
 
 import asyncio

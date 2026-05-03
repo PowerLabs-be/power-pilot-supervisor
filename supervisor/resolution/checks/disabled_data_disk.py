@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check for a disabled data disk."""
 
 from pathlib import Path

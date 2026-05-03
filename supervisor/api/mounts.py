@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Inits file for supervisor mounts REST API."""
 
 from typing import Any, cast

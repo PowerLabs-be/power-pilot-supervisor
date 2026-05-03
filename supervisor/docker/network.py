@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Internal network manager for Supervisor."""
 
 from contextlib import suppress

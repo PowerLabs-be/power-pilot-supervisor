@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Fetch last versions from webserver."""
 
 from datetime import timedelta

@@ -1,6 +1,7 @@
 """Test store manager."""
 
 from datetime import datetime
+from pathlib import Path
 from types import SimpleNamespace
 from typing import Any
 from unittest.mock import PropertyMock, patch
@@ -262,11 +263,14 @@ async def test_addon_version_timestamp(coresys: CoreSys, install_addon_example: 
     # If a new version is seen processing repo, reset to utc now
     install_addon_example.data_store["version"] = "1.1.0"
 
-    with patch(
-        "pathlib.Path.stat",
-        return_value=SimpleNamespace(
-            st_mode=0o100644, st_mtime=datetime.now().timestamp()
-        ),
-    ):
+    original_stat = Path.stat
+    def mocked_stat(self, *args, **kwargs):
+        if self.name.startswith("config."):
+            return SimpleNamespace(
+                st_mode=0o100644, st_mtime=datetime.now().timestamp()
+            )
+        return original_stat(self, *args, **kwargs)
+
+    with patch("pathlib.Path.stat", side_effect=mocked_stat, autospec=True):
         await coresys.store.reload()
     assert timestamp < install_addon_example.latest_version_timestamp

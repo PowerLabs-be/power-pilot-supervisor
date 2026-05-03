@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Home Assistant multicast plugin.
 
 Code: https://github.com/home-assistant/plugin-multicast

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Board dbus proxy interface."""
 
 from voluptuous import Schema

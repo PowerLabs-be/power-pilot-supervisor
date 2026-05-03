@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Discovery static data."""
 
 ATTR_API_KEY = "api_key"

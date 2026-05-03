@@ -1,3 +1,4 @@
+from __future__ import annotations
 """OS-Agent implementation for DBUS."""
 
 import asyncio

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Add-on Options / UI rendering."""
 
 import hashlib

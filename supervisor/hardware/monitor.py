@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervisor Hardware monitor based on udev."""
 
 import asyncio

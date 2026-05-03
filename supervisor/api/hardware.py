@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Init file for Supervisor hardware RESTful API."""
 
 import logging

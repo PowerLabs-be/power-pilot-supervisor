@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Representation of a backup file."""
 
 import asyncio

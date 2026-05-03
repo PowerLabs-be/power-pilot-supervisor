@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Baseclass for system evaluations."""
 
 from abc import ABC, abstractmethod

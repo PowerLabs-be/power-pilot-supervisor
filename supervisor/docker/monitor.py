@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervisor docker monitor based on events."""
 
 import asyncio
@@ -85,7 +86,8 @@ class DockerMonitor(CoreSysAttributes):
                 for task in pending:
                     task.cancel()
                 await asyncio.gather(*pending, return_exceptions=True)
-            self._event_tasks.shutdown(immediate=True)
+            if hasattr(self._event_tasks, "shutdown"):
+                self._event_tasks.shutdown(immediate=True)
             self._monitor_task = None
             self._await_task = None
 

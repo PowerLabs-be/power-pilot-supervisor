@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validation for mount manager."""
 
 import re

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Home Assistant Operating-System DataDisk."""
 
 import asyncio

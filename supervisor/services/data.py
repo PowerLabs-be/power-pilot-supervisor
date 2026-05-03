@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Handle service data for persistent supervisor reboot."""
 
 from typing import Any

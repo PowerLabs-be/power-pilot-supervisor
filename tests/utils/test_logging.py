@@ -51,6 +51,7 @@ async def test_logging_with_queue_handler() -> None:
     assert simple_queue.empty()
 
 
+@pytest.mark.parametrize("blockbuster", ["no_blockbuster"], indirect=True)
 async def test_migrate_log_handler() -> None:
     """Test migrating log handlers."""
 

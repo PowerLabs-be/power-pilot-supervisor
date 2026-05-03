@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validate utils."""
 
 import voluptuous as vol

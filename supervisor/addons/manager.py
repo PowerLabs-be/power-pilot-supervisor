@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervisor add-on manager."""
 
 import asyncio

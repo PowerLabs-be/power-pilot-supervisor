@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Baseclass for system fixup."""
 
 from abc import ABC, abstractmethod

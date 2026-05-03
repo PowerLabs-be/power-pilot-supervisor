@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check for deprecated addons."""
 
 from ...const import AddonStage, CoreState

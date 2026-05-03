@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validation for board config."""
 
 import voluptuous as vol

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Provide the MySQL Service."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check DNS servers for IPv6 errors."""
 
 import asyncio

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Rename data disk fixup."""
 
 import logging

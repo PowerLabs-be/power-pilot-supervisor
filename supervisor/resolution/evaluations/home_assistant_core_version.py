@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for Core version."""
 
 import logging

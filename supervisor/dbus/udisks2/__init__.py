@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 over D-Bus."""
 
 import asyncio

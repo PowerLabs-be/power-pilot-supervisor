@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Add-on static data."""
 
 from datetime import timedelta

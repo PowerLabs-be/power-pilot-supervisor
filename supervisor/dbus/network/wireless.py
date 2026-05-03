@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Wireless object for Network Manager."""
 
 import asyncio

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check and fix issues with free space."""
 
 import logging

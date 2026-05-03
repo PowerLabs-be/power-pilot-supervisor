@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Activate and deactivate blockbuster for finding blocking I/O."""
 
 import logging

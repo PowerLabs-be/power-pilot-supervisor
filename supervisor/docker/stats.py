@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Calc and represent docker stats data."""
 
 from contextlib import suppress

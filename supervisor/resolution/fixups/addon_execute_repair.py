@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helper to fix missing image for addon."""
 
 import logging

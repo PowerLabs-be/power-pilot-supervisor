@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Reboot host fixup."""
 
 import asyncio

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Constants for OS."""
 
 FILESYSTEM_LABEL_DATA_DISK = "hassos-data"

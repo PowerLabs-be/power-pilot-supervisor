@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for dbus."""
 
 from ...const import SOCKET_DBUS, CoreState

@@ -84,7 +84,7 @@ class AddonBuild(FileConfiguration, CoreSysAttributes):
     def base_image(self) -> str:
         """Return base image for this add-on."""
         if not self._data[ATTR_BUILD_FROM]:
-            return f"ghcr.io/home-assistant/{self.arch!s}-base:latest"
+            return f"ghcr.io/powerlabs-be/{self.arch!s}-base:latest"
 
         if isinstance(self._data[ATTR_BUILD_FROM], str):
             return self._data[ATTR_BUILD_FROM]

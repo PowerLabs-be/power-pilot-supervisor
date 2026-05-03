@@ -1,3 +1,4 @@
+from __future__ import annotations
 """DNS docker object."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to fixup the system."""
 
 from importlib import import_module

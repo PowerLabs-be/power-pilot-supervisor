@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 Filesystem over D-Bus."""
 
 from pathlib import Path

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervised board management."""
 
 from typing import Any

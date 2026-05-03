@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for system architecture support."""
 
 from ...const import CoreState

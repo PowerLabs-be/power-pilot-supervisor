@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helper to fix an issue with a mount by retrying it."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Info control for host."""
 
 import asyncio

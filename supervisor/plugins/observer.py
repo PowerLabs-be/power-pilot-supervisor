@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Home Assistant observer plugin.
 
 Code: https://github.com/home-assistant/plugin-observer

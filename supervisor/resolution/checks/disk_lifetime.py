@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check disk lifetime issues."""
 
 from ...const import CoreState

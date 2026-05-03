@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Main file for Supervisor."""
 
 import asyncio

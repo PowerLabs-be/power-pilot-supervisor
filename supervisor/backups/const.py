@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Backup consts."""
 
 from enum import StrEnum

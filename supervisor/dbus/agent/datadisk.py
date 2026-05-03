@@ -1,3 +1,4 @@
+from __future__ import annotations
 """DataDisk object for OS-Agent."""
 
 from pathlib import Path

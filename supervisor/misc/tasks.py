@@ -1,3 +1,4 @@
+from __future__ import annotations
 """A collection of tasks."""
 
 from contextlib import suppress

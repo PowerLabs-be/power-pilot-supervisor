@@ -1,3 +1,4 @@
+from __future__ import annotations
 """AppArmor object for OS-Agent."""
 
 from pathlib import Path

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Const for API."""
 
 from enum import StrEnum

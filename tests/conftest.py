@@ -239,7 +239,13 @@ async def docker() -> DockerAPI:
 
         # Load Docker manager
         docker_obj = await DockerAPI(
-            MagicMock(create_task=asyncio.get_running_loop().create_task)
+            MagicMock(
+                create_task=lambda coro, **kwargs: asyncio.get_running_loop().create_task(
+                    coro,
+                    name=kwargs.get("name"),
+                    context=kwargs.get("context"),
+                )
+            )
         ).post_init()
         docker_obj.config._data = {"registries": {}}
         await docker_obj.load()

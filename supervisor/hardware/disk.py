@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Read disk hardware info from system."""
 
 import errno

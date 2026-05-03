@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Network Manager DNS Manager object."""
 
 from ipaddress import ip_address

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervisor plugins base class."""
 
 from abc import ABC, abstractmethod
@@ -40,6 +41,9 @@ class PluginBase(ABC, FileConfiguration, CoreSysAttributes):
     @property
     def default_image(self) -> str:
         """Return default image for plugin."""
+        if pattern := getattr(self.sys_updater, f"image_{self.slug}", None):
+            return pattern
+
         return f"ghcr.io/home-assistant/{self.sys_arch.supervisor}-hassio-{self.slug}"
 
     @property

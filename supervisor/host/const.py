@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Const for host."""
 
 from enum import StrEnum

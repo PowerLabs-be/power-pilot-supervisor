@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validate services schema."""
 
 import voluptuous as vol

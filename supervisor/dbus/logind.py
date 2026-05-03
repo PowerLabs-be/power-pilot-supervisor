@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to Logind over D-Bus."""
 
 import logging

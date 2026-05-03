@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Tools handle YAML files for Supervisor."""
 
 import logging

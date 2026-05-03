@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Network objects for host manager."""
 
 from dataclasses import dataclass

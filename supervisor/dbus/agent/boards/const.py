@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Constants for boards."""
 
 BOARD_NAME_GREEN = "Green"

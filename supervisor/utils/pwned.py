@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Small wrapper for haveibeenpwned.com API."""
 
 import io

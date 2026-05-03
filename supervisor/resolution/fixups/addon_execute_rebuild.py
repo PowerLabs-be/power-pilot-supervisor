@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helper to fix an issue with an addon by rebuilding its container."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to fix addon by disabling boot."""
 
 import logging

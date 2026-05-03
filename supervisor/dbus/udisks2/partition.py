@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 Partition over D-Bus."""
 
 from ..const import (

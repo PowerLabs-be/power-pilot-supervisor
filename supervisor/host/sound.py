@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Pulse host control."""
 
 from dataclasses import dataclass, field

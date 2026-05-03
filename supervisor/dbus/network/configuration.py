@@ -1,3 +1,4 @@
+from __future__ import annotations
 """NetworkConnection objects for Network Manager."""
 
 from abc import ABC

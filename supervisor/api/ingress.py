@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Supervisor Add-on ingress service."""
 
 import asyncio

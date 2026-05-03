@@ -1,3 +1,4 @@
+from __future__ import annotations
 """D-Bus interface for hostname."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Read hardware info from system."""
 
 from datetime import UTC, datetime

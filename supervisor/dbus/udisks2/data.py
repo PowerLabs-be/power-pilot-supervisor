@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Data for UDisks2."""
 
 from dataclasses import dataclass

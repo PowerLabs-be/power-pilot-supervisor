@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface for single service."""
 
 from abc import ABC, abstractmethod

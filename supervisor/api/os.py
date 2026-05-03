@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Init file for Supervisor HassOS RESTful API."""
 
 import asyncio

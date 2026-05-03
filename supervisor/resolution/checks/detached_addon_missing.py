@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check for detached addons due to repo misisng."""
 
 from ...const import CoreState

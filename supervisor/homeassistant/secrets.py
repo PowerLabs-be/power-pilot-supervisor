@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Handle Home Assistant secrets to add-ons."""
 
 from datetime import timedelta

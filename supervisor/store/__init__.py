@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Add-on Store handler."""
 
 import asyncio

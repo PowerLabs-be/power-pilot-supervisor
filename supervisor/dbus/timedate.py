@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to systemd-timedate over D-Bus."""
 
 import asyncio

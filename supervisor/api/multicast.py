@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Init file for Supervisor Multicast RESTful API."""
 
 import asyncio

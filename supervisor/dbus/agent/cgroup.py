@@ -1,3 +1,4 @@
+from __future__ import annotations
 """CGroup object for OS-Agent."""
 
 from ..const import DBUS_NAME_HAOS, DBUS_OBJECT_HAOS_CGROUP

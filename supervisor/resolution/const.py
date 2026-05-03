@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Constants for the resoulution manager."""
 
 from enum import StrEnum

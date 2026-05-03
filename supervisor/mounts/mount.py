@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Network mounts in supervisor."""
 
 from abc import ABC, abstractmethod

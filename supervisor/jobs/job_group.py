@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Job group object."""
 
 from asyncio import Lock

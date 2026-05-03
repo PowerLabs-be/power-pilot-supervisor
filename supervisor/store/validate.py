@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validate add-ons options schema."""
 
 import voluptuous as vol

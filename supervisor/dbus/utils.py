@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Utils for D-Bus."""
 
 from ..exceptions import DBusNotConnectedError

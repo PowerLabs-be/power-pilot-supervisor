@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to evaluate the system."""
 
 from importlib import import_module

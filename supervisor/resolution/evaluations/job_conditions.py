@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for Job Conditions."""
 
 from ...const import CoreState

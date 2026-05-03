@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Sentinel to use when None is a valid value."""
 
 from typing import Literal

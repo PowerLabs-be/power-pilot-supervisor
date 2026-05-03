@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Constants for the add-on store."""
 
 from enum import StrEnum

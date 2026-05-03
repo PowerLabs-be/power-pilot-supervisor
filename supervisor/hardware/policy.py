@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Policy / cgroups management of local host."""
 
 import logging

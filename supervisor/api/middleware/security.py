@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Handle security part of this API."""
 
 from collections.abc import Awaitable, Callable

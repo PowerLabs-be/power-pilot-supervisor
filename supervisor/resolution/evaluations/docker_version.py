@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for docker version."""
 
 from ...const import CoreState

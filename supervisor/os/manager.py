@@ -1,3 +1,4 @@
+from __future__ import annotations
 """OS support on supervisor."""
 
 from dataclasses import dataclass
@@ -124,7 +125,7 @@ class OSManager(CoreSysAttributes):
                 and self.latest_version is not None
                 and self.version < self.latest_version
             )
-        except AwesomeVersionException, TypeError:
+        except (AwesomeVersionException, TypeError):
             return False
 
     @property

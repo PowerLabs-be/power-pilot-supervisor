@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helper to check if docker config for container needs an update."""
 
 from ...addons.const import MappingType

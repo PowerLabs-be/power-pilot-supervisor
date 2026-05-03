@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Small wrapper for whoami API.
 
 https://github.com/home-assistant/whoami.home-assistant.io

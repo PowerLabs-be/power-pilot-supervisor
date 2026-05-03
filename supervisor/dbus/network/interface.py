@@ -1,3 +1,4 @@
+from __future__ import annotations
 """NetworkInterface object for Network Manager."""
 
 import logging

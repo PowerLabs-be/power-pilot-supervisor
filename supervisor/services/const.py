@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Service API static data."""
 
 ATTR_ADDON = "addon"

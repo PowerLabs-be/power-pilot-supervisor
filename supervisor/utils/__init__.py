@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Tools file for Supervisor."""
 
 import asyncio

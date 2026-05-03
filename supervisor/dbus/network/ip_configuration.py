@@ -1,3 +1,4 @@
+from __future__ import annotations
 """IP Configuration object for Network Manager."""
 
 from ipaddress import (

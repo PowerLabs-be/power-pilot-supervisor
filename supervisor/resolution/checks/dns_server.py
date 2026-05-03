@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check DNS servers for failure."""
 
 import asyncio

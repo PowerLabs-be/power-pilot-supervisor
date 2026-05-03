@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Host function like audio, D-Bus or systemd."""
 
 from contextlib import suppress

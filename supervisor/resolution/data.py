@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Data objects."""
 
 from uuid import uuid4

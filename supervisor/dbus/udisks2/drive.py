@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 Drive over D-Bus."""
 
 from datetime import UTC, datetime

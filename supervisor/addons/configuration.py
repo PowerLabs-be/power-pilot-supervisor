@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Confgiuration Objects for Addon Config."""
 
 from dataclasses import dataclass

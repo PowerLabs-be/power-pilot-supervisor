@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Board management for OS Agent."""
 
 import logging

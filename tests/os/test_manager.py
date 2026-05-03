@@ -28,8 +28,9 @@ async def test_ota_url_generic_x86_64_rename(
     await coresys.updater.fetch_data()
 
     version6 = AwesomeVersion("6.0")
+    coresys.os._os_name = "ppos"
     url = coresys.updater.ota_url.format(
-        version=str(version6), board="generic-x86-64", os_name="haos"
+        version=str(version6), board="generic-x86-64", os_name="ppos"
     )
 
     assert coresys.os._get_download_url(version6) == url
@@ -38,10 +39,10 @@ async def test_ota_url_generic_x86_64_rename(
 def test_ota_url_os_name(coresys: CoreSys) -> None:
     """Test download URL generated with os_name."""
     board = "generic-x86-64"
-    os_name = "haos"
+    os_name = "ppos"
     versionstr = "6.0"
 
-    url = "https://github.com/home-assistant/operating-system/releases/download/{version}/{os_name}_{board}-{version}.raucb"
+    url = "https://os-artifacts.powerpilot.io/{version}/{os_name}_{board}-{version}.raucb"
     url_formatted = url.format(version=versionstr, board=board, os_name=os_name)
 
     coresys.os._board = board

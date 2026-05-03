@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Const for plugins."""
 
 from datetime import timedelta

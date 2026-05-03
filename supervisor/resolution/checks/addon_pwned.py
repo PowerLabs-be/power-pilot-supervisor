@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check core security."""
 
 from datetime import timedelta

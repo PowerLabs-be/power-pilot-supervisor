@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Firewall rules for the Supervisor network gateway."""
 
 import asyncio

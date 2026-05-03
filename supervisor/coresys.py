@@ -637,7 +637,6 @@ class CoreSys:
         return self.loop.create_task(
             coroutine,
             context=self._create_context(),
-            eager_start=eager_start,  # type: ignore
         )
 
     def call_later(

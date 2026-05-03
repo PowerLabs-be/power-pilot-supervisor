@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Filter tools."""
 
 import ipaddress

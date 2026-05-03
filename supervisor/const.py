@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Constants file for Supervisor."""
 
 from collections.abc import Mapping

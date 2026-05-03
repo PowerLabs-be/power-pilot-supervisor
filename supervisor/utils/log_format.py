@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Custom log messages."""
 
 import logging

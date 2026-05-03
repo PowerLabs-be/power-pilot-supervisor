@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Init file for Supervisor Security RESTful API."""
 
 from typing import Any

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Home Assistant control object."""
 
 import asyncio
@@ -183,7 +184,10 @@ class HomeAssistant(FileConfiguration, CoreSysAttributes):
     @property
     def default_image(self) -> str:
         """Return the default image for this system."""
-        return f"ghcr.io/home-assistant/{self.sys_machine}-homeassistant"
+        if self.sys_updater.image_homeassistant:
+            return self.sys_updater.image_homeassistant
+
+        return f"ghcr.io/powerlabs-be/{self.sys_machine}-power-pilot-core"
 
     @property
     def image(self) -> str:
@@ -426,10 +430,13 @@ class HomeAssistant(FileConfiguration, CoreSysAttributes):
         def _is_excluded_by_filter(path: PurePath) -> bool:
             """Filter function to filter out excluded files from the backup."""
             for exclude in excludes:
-                if not path.full_match(f"data/{exclude}"):
-                    continue
-                _LOGGER.debug("Ignoring %s because of %s", path, exclude)
-                return True
+                if path.match(f"data/{exclude}"):
+                    _LOGGER.debug("Ignoring %s because of %s", path, exclude)
+                    return True
+                # Handle zero-directory case for ** which match() in Python < 3.13 doesn't
+                if "**/" in exclude and path.match(f"data/{exclude.replace('**/', '')}"):
+                    _LOGGER.debug("Ignoring %s because of %s", path, exclude)
+                    return True
 
             return False
 

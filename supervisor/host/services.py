@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Service control for host."""
 
 from collections.abc import Awaitable

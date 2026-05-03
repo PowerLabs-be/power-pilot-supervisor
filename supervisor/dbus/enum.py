@@ -1,3 +1,4 @@
+from __future__ import annotations
 """D-Bus tolerant enum base classes.
 
 D-Bus services (systemd, NetworkManager, RAUC, UDisks2) can introduce new enum

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 Block Device over D-Bus."""
 
 import asyncio

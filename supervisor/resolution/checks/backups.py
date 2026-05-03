@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check if backed up."""
 
 from ...backups.const import BackupType

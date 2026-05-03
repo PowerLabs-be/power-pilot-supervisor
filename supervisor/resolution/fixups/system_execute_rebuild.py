@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helper to fix an issue with the system by rebuilding containers."""
 
 import asyncio

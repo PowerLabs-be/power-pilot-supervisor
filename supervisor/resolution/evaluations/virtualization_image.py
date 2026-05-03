@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for virtualization image."""
 
 from ...const import CoreState

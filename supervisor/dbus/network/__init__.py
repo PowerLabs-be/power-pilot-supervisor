@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Network Manager implementation for DBUS."""
 
 import logging

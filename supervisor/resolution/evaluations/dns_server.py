@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for DNS server."""
 
 from ...const import CoreState

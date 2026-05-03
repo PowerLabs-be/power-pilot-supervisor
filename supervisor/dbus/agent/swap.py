@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Swap object for OS Agent."""
 
 from collections.abc import Awaitable

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to Systemd over D-Bus."""
 
 from functools import wraps

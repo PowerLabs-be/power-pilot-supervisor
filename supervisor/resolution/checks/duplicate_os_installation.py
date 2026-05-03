@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Helpers to check for duplicate OS installations."""
 
 import logging

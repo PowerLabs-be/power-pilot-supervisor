@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Init file for Supervisor RESTful API."""
 
 from dataclasses import dataclass

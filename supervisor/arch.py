@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Handle Arch for underlay maschine/platforms."""
 
 import logging

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Home Assistant control object."""
 
 from collections.abc import Awaitable

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Fetch last versions from webserver."""
 
 from contextlib import suppress

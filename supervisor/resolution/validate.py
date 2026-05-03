@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Validate resolution configuration schema."""
 
 from pathlib import Path

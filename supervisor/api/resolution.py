@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Handle REST API for resoulution."""
 
 import asyncio

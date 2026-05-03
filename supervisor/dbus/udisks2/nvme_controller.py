@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Interface to UDisks2 NVME Controller over D-Bus."""
 
 from dataclasses import dataclass

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Schedule for Supervisor."""
 
 import asyncio

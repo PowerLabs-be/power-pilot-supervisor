@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Enable NTP fixup."""
 
 import logging

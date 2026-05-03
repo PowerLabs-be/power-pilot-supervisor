@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Evaluation class for connectivity check."""
 
 from ...const import CoreState
