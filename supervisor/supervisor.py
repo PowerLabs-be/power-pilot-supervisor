@@ -112,7 +112,7 @@ class Supervisor(CoreSysAttributes):
     @property
     def default_image(self) -> str:
         """Return the default image for this system."""
-        return f"ghcr.io/home-assistant/{self.sys_arch.supervisor}-hassio-supervisor"
+        return f"ghcr.io/powerlabs-be/{self.sys_arch.supervisor}-power-pilot-supervisor"
 
     @property
     def image(self) -> str | None:
@@ -160,7 +160,7 @@ class Supervisor(CoreSysAttributes):
         try:
             profile_file = await self.sys_run_in_executor(write_profile)
 
-            await self.sys_host.apparmor.load_profile("hassio-supervisor", profile_file)
+            await self.sys_host.apparmor.load_profile("power-pilot-supervisor", profile_file)
 
         except OSError as err:
             if err.errno == errno.EBADMSG:
@@ -284,7 +284,7 @@ class Supervisor(CoreSysAttributes):
         timeout = aiohttp.ClientTimeout(total=10)
         try:
             await self.sys_websession.head(
-                "https://checkonline.home-assistant.io/online.txt", timeout=timeout
+                "https://raw.githubusercontent.com/PowerLabs-be/power-pilot-version/master/online.txt", timeout=timeout
             )
         except (ClientError, TimeoutError) as err:
             _LOGGER.debug("Supervisor Connectivity check failed: %s", err)
