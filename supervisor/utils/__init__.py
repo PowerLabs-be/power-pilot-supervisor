@@ -1,5 +1,6 @@
-from __future__ import annotations
 """Tools file for Supervisor."""
+
+from __future__ import annotations
 
 import asyncio
 from functools import lru_cache
@@ -13,7 +14,7 @@ import subprocess
 from tempfile import TemporaryDirectory
 from typing import Any
 
-from awesomeversion import AwesomeVersion
+from awesomeversion import AwesomeVersion, AwesomeVersionCompareException
 
 _LOGGER: logging.Logger = logging.getLogger(__name__)
 
@@ -168,7 +169,11 @@ def version_is_new_enough(
     version: AwesomeVersion, want_version: AwesomeVersion
 ) -> bool:
     """Return True if the given version is new enough."""
-    return version >= want_version
+    try:
+        return version >= want_version
+    except AwesomeVersionCompareException:
+        _LOGGER.warning("Can't compare versions %s and %s", version, want_version)
+        return False
 
 
 def directory_missing_or_empty(path: Path) -> bool:
